@@ -1,0 +1,82 @@
+site_name: Ollama Docs 
+site_description: 项目详细文档说明
+docs_dir: docs
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: zh
+          default: true
+          build: true
+          name: 中文
+          site_name: Ollama 中文文档
+        - locale: en
+          build: true
+          name: English
+          site_name: Ollama English Documentation
+          nav:
+            - Home: index.md
+            - Getting Started:
+                - Quickstart: README.md
+                - Examples: examples.md
+                - Importing models: import.md
+                - Linux Documentation: linux.md
+                - Windows Documentation: windows.md
+                - Docker Documentation: docker.md
+            - Reference:
+                - API Reference: api.md
+                - Modelfile Reference: modelfile.md
+                - OpenAI Compatibility: openai.md
+            - Resources:
+                - Troubleshooting Guide: troubleshooting.md
+                - FAQ: faq.md
+                - Development guide: development.md
+            
+nav:
+  - 首页: index.md
+  - 入门:
+      - 快速入门: README_ZH.md
+      - 示例: examples.md
+      - 导入模型: import.md
+      - Linux 文档: linux.md
+      - Windows 文档: windows.md
+      - Docker 文档: docker.md
+  - 参考:
+      - API 参考: api.md
+      - 模型文件参考: modelfile.md
+      - OpenAI 兼容性: openai.md
+  - 资源:
+      - 故障排除指南: troubleshooting.md
+      - 常见问题: faq.md
+      - 开发指南: development.md
