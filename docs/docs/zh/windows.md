@@ -28,7 +28,7 @@ Ollama 安装不需要管理员权限，默认安装在你的用户目录中。�
 OllamaSetup.exe /DIR="d:\some\location"
 ```
 
-### 更改模型存储位置
+### 更改模型存储位置 {#change-model-location}
 
 要更改 Ollama 存储下载模型的位置，而不是使用你的主目录，可以在你的用户账户中设置环境变量 `OLLAMA_MODELS`。
 
@@ -66,7 +66,7 @@ Ollama 在 Windows 上将文件存储在几个不同的位置。你可以在资�
 Ollama Windows 安装程序注册了一个卸载应用程序。在 Windows 设置中的 `添加或删除程序` 下，你可以卸载 Ollama。
 
 > [!NOTE]
-> 如果你已经[更改了 OLLAMA_MODELS 位置](#changing-model-location)，安装程序不会移除你下载的模型
+> 如果你已经[更改了 OLLAMA_MODELS 位置](#change-model-location)，安装程序不会移除你下载的模型
 
 ## 独立 CLI
 

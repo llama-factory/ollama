@@ -1,7 +1,7 @@
 # 文档
 
 ### 入门
-* [快速入门](./README_ZH.md#快速入门)
+* [快速入门](./quickstart.md#quickstart)
 * [示例](https://github.com/ollama/ollama/tree/main/examples)
 * [导入模型](./import.md)
 * [Linux 文档](./linux.md)

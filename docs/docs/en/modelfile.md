@@ -67,7 +67,7 @@ To use this:
 3. `ollama run choose-a-model-name`
 4. Start using the model!
 
-More examples are available in the [examples directory](../examples).
+More examples are available in the [examples directory](https://github.com/ollama/ollama/tree/main/examples).
 
 To view the Modelfile of a given model, use the `ollama show --modelfile` command.
 

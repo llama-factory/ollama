@@ -6,4 +6,4 @@
 - [在 Python 中使用 LangChain 与 Ollama](./tutorials/langchainpy.md)
 - [在 NVIDIA Jetson 设备上运行 Ollama](./tutorials/nvidia-jetson.md)
 
-还可以查看 [示例](../examples) 目录，了解更多的 Ollama 使用方法。
+还可以查看 [示例](https://github.com/ollama/ollama/tree/main/examples) 目录，了解更多的 Ollama 使用方法。

@@ -2,21 +2,21 @@
 
 ## 端点
 
-- [生成Completion](#生成Completion)
-- [生成ChatCompletion](#生成ChatCompletion)
-- [创建模型](#创建模型)
-- [列出本地模型](#列出本地模型)
-- [显示模型信息](#显示模型信息)
-- [复制模型](#复制模型)
-- [删除模型](#删除模型)
-- [拉取模型](#拉取模型)
-- [推送模型](#推送模型)
-- [生成嵌入](#生成嵌入)
-- [列出正在运行的模型](#列出正在运行的模型)
+- [生成Completion](#generate-a-completion)
+- [生成ChatCompletion](#generate-a-chat-completion)
+- [创建模型](#create-a-model)
+- [列出本地模型](#list-local-models)
+- [显示模型信息](#show-model-information)
+- [复制模型](#copy-a-model)
+- [删除模型](#delete-a-model)
+- [拉取模型](#pull-a-model)
+- [推送模型](#push-a-model)
+- [生成嵌入](#generate-embeddings)
+- [列出正在运行的模型](#list-running-models)
 
 ## 约定
 
-### 模型名称
+### 模型名称 {#model-names}
 
 模型名称遵循 `model:tag` 格式，其中 `model` 可以有一个可选的命名空间，例如 `example/model`。一些示例包括 `orca-mini:3b-q4_1` 和 `llama3:70b`。标签是可选的，如果未提供，则默认为 `latest`。标签用于标识特定版本。
 
@@ -28,7 +28,7 @@
 
 某些端点以 JSON 对象的形式流式传输响应。可以通过为这些端点提供 `{"stream": false}` 来禁用流式传输。
 
-## 生成Completion
+## 生成Completion {#generate-a-completion}
 
 ```shell
 POST /api/generate
@@ -185,7 +185,7 @@ curl http://localhost:11434/api/generate -d '{
 }
 ```
 
-#### 请求 (JSON 模式)
+#### 请求 (JSON 模式) {#request-json-mode}
 
 > [!IMPORTANT]
 > 当 `format` 设置为 `json` 时，输出将始终是一个格式良好的 JSON 对象。重要的是还要指示模型以 JSON 格式响应。
@@ -433,7 +433,7 @@ curl http://localhost:11434/api/generate -d '{
 }
 ```
 
-## 生成ChatCompletion
+## 生成ChatCompletion {#generate-a-chat-completion}
 
 ```shell
 POST /api/chat
@@ -821,7 +821,7 @@ curl http://localhost:11434/api/chat -d '{
 }
 ```
 
-## 创建模型
+## 创建模型 {#create-a-model}
 
 ```shell
 POST /api/create
@@ -944,7 +944,7 @@ curl -I http://localhost:11434/api/blobs/sha256:29fdb92e57cf0827ded04ae6461b5931
 
 如果 blob 存在，则返回 200 OK；如果不存在，则返回 404 Not Found。
 
-### 创建一个 Blob
+### 创建一个 Blob {#create-a-blob}
 
 ```shell
 POST /api/blobs/:digest
@@ -968,7 +968,7 @@ curl -T model.bin -X POST http://localhost:11434/api/blobs/sha256:29fdb92e57cf08
 
 如果 blob 创建成功，则返回 201 Created；如果使用的摘要不符合预期，则返回 400 Bad Request。
 
-## 列出本地模型
+## 列出本地模型 {#list-local-models}
 
 ```shell
 GET /api/tags
@@ -1021,7 +1021,7 @@ curl http://localhost:11434/api/tags
 }
 ```
 
-## 显示模型信息
+## 显示模型信息 {#show-model-information}
 
 ```shell
 POST /api/show
@@ -1087,7 +1087,7 @@ curl http://localhost:11434/api/show -d '{
 }
 ```
 
-## 复制模型
+## 复制模型 {#copy-a-model}
 
 ```shell
 POST /api/copy
@@ -1110,7 +1110,7 @@ curl http://localhost:11434/api/copy -d '{
 
 如果成功，返回 200 OK；如果源模型不存在，则返回 404 Not Found。
 
-## 删除模型
+## 删除模型 {#delete-a-model}
 
 ```shell
 DELETE /api/delete
@@ -1136,7 +1136,7 @@ curl -X DELETE http://localhost:11434/api/delete -d '{
 
 如果成功，返回 200 OK；如果要删除的模型不存在，则返回 404 Not Found。
 
-## 拉取模型
+## 拉取模型 {#pull-a-model}
 
 ```shell
 POST /api/pull
@@ -1208,7 +1208,7 @@ curl http://localhost:11434/api/pull -d '{
 }
 ```
 
-## 推送模型
+## 推送模型 {#push-a-model}
 
 ```shell
 POST /api/push
@@ -1273,7 +1273,7 @@ curl http://localhost:11434/api/push -d '{
 { "status": "success" }
 ```
 
-## 生成嵌入向量
+## 生成嵌入向量 {#generate-embeddings}
 
 ```shell
 POST /api/embed
@@ -1342,7 +1342,7 @@ curl http://localhost:11434/api/embed -d '{
 }
 ```
 
-## 列出正在运行的模型
+## 列出正在运行的模型 {#list-running-models}
 
 ```shell
 GET /api/ps

@@ -7,24 +7,24 @@
 
 ## 目录
 
-- [格式](#格式)
-- [示例](#示例)
-- [指令](#指令)
-  - [FROM（必需）](#from必需)
-    - [基于现有模型构建](#基于现有模型构建)
-    - [从Safetensors模型构建](#从Safetensors模型构建)
-    - [从GGUF文件构建](#从GGUF文件构建)
-  - [参数](#参数)
-    - [有效的参数和值](#有效的参数和值)
-  - [模板](#模板)
-    - [模板变量](#模板变量)
+- [格式](#format)
+- [示例](#examples)
+- [指令](#instructions)
+  - [FROM（必需）](#from-required)
+    - [基于现有模型构建](#build-from-existing-model)
+    - [从Safetensors模型构建](#build-from-a-safetensors-model)
+    - [从GGUF文件构建](#build-from-a-gguf-file)
+  - [参数](#parameter)
+    - [有效的参数和值](#valid-parameters-and-values)
+  - [模板](#template)
+    - [模板变量](#template-variables)
   - [SYSTEM](#system)
   - [ADAPTER](#adapter)
-  - [许可证](#许可证)
+  - [许可证](#license)
   - [MESSAGE](#message)
-- [注意事项](#注意事项)
+- [注意事项](#notes)
 
-## 格式
+## 格式 {#format}
 
 `Modelfile` 的格式：
 
@@ -48,7 +48,7 @@ INSTRUCTION arguments
 | [`MESSAGE`](#message)               | Specify message history.                                       |
 
 
-## 示例
+## 示例 {#examples}
 
 ### 基本 `Modelfile`
 
@@ -72,7 +72,7 @@ SYSTEM You are Mario from super mario bros, acting as an assistant.
 3. `ollama run choose-a-model-name`
 4. 开始使用模型!
 
-更多示例可在[示例目录](../examples)中找到。
+更多示例可在[示例目录](https://github.com/ollama/ollama/tree/main/examples)中找到。
 
 要查看给定模型的Modelfile，请使用`ollama show --modelfile`命令。
 
@@ -96,9 +96,9 @@ SYSTEM You are Mario from super mario bros, acting as an assistant.
   PARAMETER stop "<|reserved_special_token"
   ```
 
-## 指令
+## 指令 {#instructions}
 
-### FROM（必需）
+### FROM（必需） {#from-required}
 
 `FROM` 指令定义了在创建模型时要使用的基础模型。
 
@@ -106,7 +106,7 @@ SYSTEM You are Mario from super mario bros, acting as an assistant.
 FROM <model name>:<tag>
 ```
 
-#### 基于现有模型构建
+#### 基于现有模型构建 {#build-from-existing-model}
 
 ```modelfile
 FROM llama3.2
@@ -118,7 +118,7 @@ FROM llama3.2
 可以在以下位置找到其他模型：
 <https://ollama.com/library>
 
-#### 从Safetensors模型构建
+#### 从Safetensors模型构建 {#build-from-a-safetensors-model}
 
 ```modelfile
 FROM <model directory>
@@ -132,7 +132,7 @@ FROM <model directory>
   * Gemma（包括 Gemma 1 和 Gemma 2）
   * Phi3
 
-#### 从GGUF文件构建
+#### 从GGUF文件构建 {#build-from-a-gguf-file}
 
 ```modelfile
 FROM ./ollama-model.gguf
@@ -141,7 +141,7 @@ FROM ./ollama-model.gguf
 GGUF 文件的位置应指定为绝对路径或相对于 `Modelfile` 的位置。
 
 
-### 参数
+### 参数 {#parameter}
 
 `PARAMETER` 指令定义了一个在运行模型时可以设置的参数。
 
@@ -149,7 +149,7 @@ GGUF 文件的位置应指定为绝对路径或相对于 `Modelfile` 的位置�
 PARAMETER <parameter> <parametervalue>
 ```
 
-#### 有效的参数和值
+#### 有效的参数和值 {#valid-parameters-and-values}
 
 
 | Parameter      | Description                                                                                                                                                                                                                                             | Value Type | Example Usage        |
@@ -170,11 +170,11 @@ PARAMETER <parameter> <parametervalue>
 | min_p          | Alternative to the top_p, and aims to ensure a balance of quality and variety. The parameter *p* represents the minimum probability for a token to be considered, relative to the probability of the most likely token. For example, with *p*=0.05 and the most likely token having a probability of 0.9, logits with a value less than 0.045 are filtered out. (Default: 0.0) | float      | min_p 0.05            |
 
 
-### 模板
+### 模板  {#template}
 
 要传递给模型的完整提示模板 `TEMPLATE`。它可能包括（可选）系统消息、用户消息和模型的响应。注意：语法可能是模型特定的。模板使用 Go [模板语法](https://pkg.go.dev/text/template)。
 
-#### 模板变量
+#### 模板变量 {#template-variables}
 
 
 | Variable          | Description                                                                                   |
@@ -196,7 +196,7 @@ TEMPLATE """{{ if .System }}<|im_start|>system
 """
 ```
 
-### SYSTEM
+### SYSTEM 
 
 `SYSTEM` 指令指定了模板中要使用的系统消息（如果适用）。
 
@@ -225,7 +225,7 @@ ADAPTER <path to safetensor adapter>
 ADAPTER ./ollama-lora.gguf
 ```
 
-### 许可证
+### 许可证 {#license}
 
 `LICENSE` 指令允许你指定与此 Modelfile 一起使用的模型的共享或分发所依据的法律许可证。
 
@@ -264,7 +264,7 @@ MESSAGE user Is Ontario in Canada?
 MESSAGE assistant yes
 ```
 
-## 注意事项
+## 注意事项 {#notes}
 
 - **`Modelfile` 不区分大小写**。在示例中，使用大写指令是为了更容易区分它与参数。
 - 指令可以按任意顺序排列。在示例中，`FROM` 指令放在首位是为了保持可读性。

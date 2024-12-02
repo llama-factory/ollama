@@ -1,7 +1,7 @@
 # Documentation
 
 ### Getting Started
-* [Quickstart](./README.md#quickstart)
+* [Quickstart](./quickstart.md#quickstart)
 * [Examples](https://github.com/ollama/ollama/tree/main/examples)
 * [Importing models](./import.md)
 * [Linux Documentation](./linux.md)

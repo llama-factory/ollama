@@ -55,7 +55,7 @@ llama3:70b	bcfb190ca3a7	42 GB	100% GPU 	4 minutes from now
 * `100% CPU` 表示模型完全加载到系统内存
 * `48%/52% CPU/GPU` 表示模型部分加载到 GPU 和系统内存
 
-## 如何配置 Ollama 服务器？
+## 如何配置 Ollama 服务器？ {#how-do-i-configure-ollama-server}
 
 Ollama 服务器可以通过环境变量进行配置。
 
@@ -182,7 +182,7 @@ cloudflared tunnel --url http://localhost:11434 --http-host-header="localhost:11
 
 Ollama 默认允许来自 `127.0.0.1` 和 `0.0.0.0` 的跨源请求。可以通过设置 `OLLAMA_ORIGINS` 来配置其他源。
 
-请参阅上方的 [如何配置 Ollama 服务器](#如何配置-ollama-服务器) 部分，了解如何在你的平台上设置环境变量。
+请参阅上方的 [如何配置 Ollama 服务器](#how-do-i-configure-ollama-server) 部分，了解如何在你的平台上设置环境变量。
 
 ## 模型存储在哪里？
 

@@ -99,7 +99,7 @@ Ollama supports importing GGUF models in the Modelfile:
 
 ### Import from PyTorch or Safetensors
 
-See the [guide](docs/import.md) on importing models for more information.
+See the [guide](./import.md) on importing models for more information.
 
 ### Customize a prompt
 
@@ -132,7 +132,7 @@ ollama run mario
 Hello! It's your friend Mario.
 ```
 
-For more examples, see the [examples](examples) directory. For more information on working with a Modelfile, see the [Modelfile](docs/modelfile.md) documentation.
+For more examples, see the [examples](https://github.com/ollama/ollama/tree/main/examples) directory. For more information on working with a Modelfile, see the [Modelfile](./modelfile.md) documentation.
 
 ## CLI Reference
 
@@ -259,7 +259,7 @@ curl http://localhost:11434/api/chat -d '{
 }'
 ```
 
-See the [API documentation](./docs/api.md) for all endpoints.
+See the [API documentation](./api.md) for all endpoints.
 
 ## Community Integrations
 

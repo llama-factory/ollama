@@ -34,7 +34,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 - [ollama-python](https://github.com/ollama/ollama-python)
 - [ollama-js](https://github.com/ollama/ollama-js)
 
-## 快速入门
+## 快速入门 {#quickstart}
 
 要运行并与 [Llama 3.2](https://ollama.com/library/llama3.2) 聊天：
 
@@ -135,7 +135,7 @@ ollama run mario
 Hello! It's your friend Mario.
 ```
 
-对于更多示例，请参阅 [examples](examples) 目录。有关如何使用 Modelfile 的更多信息，请参阅 [Modelfile](./modelfile.md) 文档。
+对于更多示例，请参阅 [examples](https://github.com/ollama/ollama/tree/main/examples) 目录。有关如何使用 Modelfile 的更多信息，请参阅 [Modelfile](./modelfile.md) 文档。
 
 ## 命令行参考
 

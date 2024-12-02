@@ -2,12 +2,12 @@
 
 ## 目录
 
-  * [从 Safetensors 权重导入微调适配器](#从-Safetensors-权重导入微调适配器)
-  * [从 Safetensors 权重导入模型](#从-Safetensors-权重导入模型)
-  * [导入 GGUF 文件](#导入基于-GGUF-的模型或适配器)
-  * [在 ollama.com 上共享模型](#在-ollama.com-上共享你的模型)
+  * [从 Safetensors 权重导入微调适配器](#importing-a-fine-tuned-adapter-from-safetensors-weights)
+  * [从 Safetensors 权重导入模型](#importing-a-model-from-safetensors-weights)
+  * [导入 GGUF 文件](#importing-a-gguf-based-model-or-adapter)
+  * [在 ollama.com 上共享模型](#sharing-your-model-on-ollamacom)
 
-## 从 Safetensors 权重导入微调适配器
+## 从 Safetensors 权重导入微调适配器 {#importing-a-fine-tuned-adapter-from-safetensors-weights}
 
 首先，创建一个 `Modelfile`，其中包含一个指向你用于微调的基础模型的 `FROM` 命令，以及一个指向你的 Safetensors 适配器目录的 `ADAPTER` 命令：
 
@@ -43,7 +43,7 @@ Ollama 支持基于几种不同的模型架构导入适配器，包括：
   * [MLX](https://github.com/ml-explore/mlx)
 
 
-## 从 Safetensors 权重导入模型
+## 从 Safetensors 权重导入模型 {#importing-a-model-from-safetensors-weights}
 
 首先，创建一个 `Modelfile`，其中包含一个指向包含你的 Safetensors 权重的目录的 `FROM` 命令：
 
@@ -73,7 +73,7 @@ Ollama 支持导入多种不同架构的模型，包括：
   * Phi3
 
 这包括导入基础模型以及任何与基础模型 _融合_ 的微调模型。
-## 导入基于 GGUF 的模型或适配器
+## 导入基于 GGUF 的模型或适配器 {#importing-a-gguf-based-model-or-adapter}
 
 如果你有一个基于 GGUF 的模型或适配器，可以将其导入 Ollama。你可以通过以下方式获取 GGUF 模型或适配器：
 
@@ -150,13 +150,13 @@ success
 - `q6_K`
 
 
-## 在 ollama.com 上分享你的模型
+## 在 ollama.com 上分享你的模型 {#sharing-your-model-on-ollamacom}
 
 你可以通过将模型推送到 [ollama.com](https://ollama.com) 来分享你创建的任何模型，以便其他用户可以尝试使用。
 
 首先，使用浏览器访问 [Ollama 注册](https://ollama.com/signup) 页面。如果你已经有账户，可以跳过这一步。
 
-<img src="images/signup.png" alt="Sign-Up" width="40%">
+<img src="http://zh-docs-images.oss-cn-hangzhou.aliyuncs.com/signup.png" alt="Sign-Up" width="40%">
 
 `用户名` 字段将作为你模型名称的一部分（例如 `jmorganca/mymodel`），因此请确保你对所选的用户名感到满意。
 
@@ -164,7 +164,7 @@ success
 
 按照页面上的说明确定你的 Ollama 公钥的位置。
 
-<img src="images/ollama-keys.png" alt="Ollama Keys" width="80%">
+<img src="http://zh-docs-images.oss-cn-hangzhou.aliyuncs.com/ollama-keys.png" alt="Ollama Keys" width="80%">
 
 点击 `Add Ollama Public Key` 按钮，将你的 Ollama 公钥内容复制并粘贴到文本框中。
 

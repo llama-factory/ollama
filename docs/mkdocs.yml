@@ -1,5 +1,5 @@
 site_name: Ollama Docs 
-site_description: 项目详细文档说明
+site_description: ollama 的中英文文档，中文文档由 llamafactory.cn 翻译
 docs_dir: docs
 
 theme:
@@ -48,7 +48,7 @@ plugins:
           nav:
             - Home: index.md
             - Getting Started:
-                - Quickstart: README.md
+                - Quickstart: quickstart.md
                 - Examples: examples.md
                 - Importing models: import.md
                 - Linux Documentation: linux.md
@@ -66,7 +66,7 @@ plugins:
 nav:
   - 首页: index.md
   - 入门:
-      - 快速入门: README_ZH.md
+      - 快速入门: quickstart.md
       - 示例: examples.md
       - 导入模型: import.md
       - Linux 文档: linux.md
@@ -80,3 +80,6 @@ nav:
       - 故障排除指南: troubleshooting.md
       - 常见问题: faq.md
       - 开发指南: development.md
+        
+markdown_extensions:
+    - attr_list
