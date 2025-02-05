@@ -21,4 +21,4 @@
 * [开发指南](./development.md)
 
 ### 其他
-* 更多资源见：https://www.llamafactory.cn
+* 更多资源见：[https://www.llamafactory.cn](https://www.llamafactory.cn)

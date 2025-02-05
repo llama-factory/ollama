@@ -21,4 +21,4 @@
 * [Development guide](./development.md)
 
 ### Other
-* For more resources see: https://www.llamafactory.cn
+* For more resources see: [https://www.llamafactory.cn](https://www.llamafactory.cn)
