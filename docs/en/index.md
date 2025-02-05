@@ -19,3 +19,6 @@
 * [Troubleshooting Guide](./troubleshooting.md)
 * [FAQ](./faq.md)
 * [Development guide](./development.md)
+
+### Other
+* For more resources see: https://www.llamafactory.cn

@@ -19,3 +19,6 @@
 * [故障排除指南](./troubleshooting.md)
 * [常见问题](./faq.md)
 * [开发指南](./development.md)
+
+### 其他
+* 更多资源见：https://www.llamafactory.cn
