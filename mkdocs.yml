@@ -62,6 +62,8 @@ plugins:
                 - Troubleshooting Guide: troubleshooting.md
                 - FAQ: faq.md
                 - Development guide: development.md
+            - GPU Resources:
+                - Ollama x UCloud CompShare: gpu_source.md
             
 nav:
   - 首页: index.md
@@ -80,6 +82,8 @@ nav:
       - 故障排除指南: troubleshooting.md
       - 常见问题: faq.md
       - 开发指南: development.md
+  - 算力:
+      - Ollama x UCloud优云智算: gpu_source.md
         
 markdown_extensions:
     - attr_list
