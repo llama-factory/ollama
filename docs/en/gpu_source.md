@@ -4,12 +4,12 @@ UCloud CompShare is a GPU computing power rental platform by UCloud (UCloud Tech
 [Direct Link to Official Website](https://www.compshare.cn/?ytag=llamafactory_document)
 
 ### Supported GPU Types   
-![Supported GPU Types](
-https://www-s.ucloud.cn/2025/02/c009cd48392cd54056637d9f83d6ba34_1739945280401.png)
+[![Supported GPU Types](
+https://www-s.ucloud.cn/2025/02/c009cd48392cd54056637d9f83d6ba34_1739945280401.png)](https://www.compshare.cn/image-community?ytag=GPU_web_ollama){:target="_blank"}
 
 ### New User Benefits   
-![New User Benefits](
-https://www-s.ucloud.cn/2025/02/776f5f622f08ae90be708bca3d5b8f0b_1739945403354.png)
+[![New User Benefits](
+https://www-s.ucloud.cn/2025/02/776f5f622f08ae90be708bca3d5b8f0b_1739945403354.png)](https://www.compshare.cn/image-community?ytag=GPU_web_ollama){:target="_blank"}
 [Click to Register Now](https://passport.compshare.cn/login?ytag=llamafactory_document). New users can enjoy 10 hours of free RTX40 series GPU computing power after registration and identity verification. Academic/Enterprise certification users can enjoy a 5% discount on computing power purchases and additional computing power subsidies.   
 
 ### Rich AI Image Community   
@@ -18,8 +18,8 @@ The community image platform is designed to provide AI users with a secure, effi
 
 Deepseek series images based on Ollama, vllm, Unsloth, ktransformers, and SGLang are now available in the UCloud CompShare community. Additionally, there are massive professional AI images for large models, digital humans, voice cloning, AI painting, etc., offering one-click deployment and out-of-the-box usage.    
 
-![New User Benefits](
-https://www-s.ucloud.cn/2025/02/0e4845d41c8ec9947bcf8be12422f3f2_1739945814752.png)
+[![New User Benefits](
+https://www-s.ucloud.cn/2025/02/0e4845d41c8ec9947bcf8be12422f3f2_1739945814752.png)](https://www.compshare.cn/image-community?ytag=GPU_web_ollama){:target="_blank"}
 
 ### Image Usage Tutorials
 **Tutorial 1: DeepSeek R1 Full Series Model Deployment Tutorial Based on vLLM and Ollama, Free Trial Available!**   
