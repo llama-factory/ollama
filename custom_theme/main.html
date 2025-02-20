@@ -14,7 +14,14 @@
   /> -->
   <img src="https://www.llamafactory.cn/three-party/ollama-ucloud.png"
     style="cursor: pointer; margin-bottom: 8px;"
-    onclick="window.open('https://www.compshare.cn/?ytag=GPU_web_ollama', '_blank')"
+    onclick="fetch('https://api.llamafactory.cn/paper/view', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            credentials: 'include',
+            body: JSON.stringify({ id: 1 })
+          }); window.open('https://www.compshare.cn/?ytag=GPU_web_ollama', '_blank')"
   />
   {{ super() }}  {# 保留原始内容 #}
 
