@@ -24,6 +24,9 @@
           }); window.open('https://www.compshare.cn/?ytag=GPU_web_ollama', '_blank')"
   />
   {{ super() }}  {# 保留原始内容 #}
+{% endblock %}
 
-
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ 'assets/js/custom.js' | url }}"></script>
 {% endblock %}
