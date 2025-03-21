@@ -83,8 +83,8 @@ nav:
       - 故障排除指南: troubleshooting.md
       - 常见问题: faq.md
       - 开发指南: development.md
-  - 算力:
-      - Ollama x UCloud优云智算: gpu_source.md
+  # - 算力:
+  #     - Ollama x UCloud优云智算: gpu_source.md
         
 markdown_extensions:
     - attr_list
